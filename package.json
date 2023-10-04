@@ -5,12 +5,9 @@
   "description": "[![Actions Status](https://github.com/masha-masha/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/masha-masha/frontend-project-44/actions)",
   "main": "index.js",
   "scripts": {
-    "test": "hexlet-check"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com:masha-masha/frontend-project-44.git"
-  },
+  
   "author": "",
   "license": "ISC",
   "bin": {
@@ -18,8 +15,5 @@
   },
   "devDependencies": {
     "jest": "^29.7.0"
-  },
-  "dependencies": {
-    "babel": "^6.23.0"
   }
 }
