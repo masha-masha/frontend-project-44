@@ -15,8 +15,9 @@ const playRound = () => {
   const isEven = (number) => !(number % 2);
   const correctAnswer = isEven(number) ? 'yes' : 'no';
   if (playerAnswer === correctAnswer) {
-    console.log('Correct!')
+    console.log('Correct!');
     return true;
+
   } else {
     console.log('Wrong!')
     return false;
