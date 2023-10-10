@@ -1,6 +1,6 @@
 import playGame from '../index.js';
-import { getNumber, getIndex } from '../utils.js';
-const rulesOfTheGame = 'What is the result of the expression?';
+import { getNumber } from '../utils.js';
+const rulesOfTheGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 const playRound = () => {
     const number = getNumber();
     const question = number;
