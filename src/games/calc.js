@@ -24,6 +24,6 @@ const calculate = (x, y, operator) => {
     return [question, correctAnswer];
   };
   
-  const brainCalc = () => playGame(rulesOfTheGame,playRound);
+  const brainCalc = () => playGame(rulesOfTheGame, playRound);
   export default brainCalc;
 
