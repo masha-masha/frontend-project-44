@@ -16,8 +16,8 @@ const calculate = (x, y, operator) => {
     }
   };
   const playRound = () => {
-    const number1 = getNumber();
-    const number2 = getNumber();
+    const number1 = getNumber(0, 50);
+    const number2 = getNumber(0, 50);
     const operator = operators[getIndex(operators)];
     const question = `${number1} ${operator} ${number2}`;
     const correctAnswer = calculate(number1, number2, operator).toString();
