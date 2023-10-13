@@ -1,7 +1,7 @@
 import playGame from '../index.js';
 
 import { getNumber } from '../utils.js';
-const rulesOfTheGame = 'Find the greatest common divisor of given numbers.'
+const rulesOfTheGame = 'Find the greatest common divisor of given numbers.';
 
 const getGcd = (a, b) => ((a % b) ? getGcd(b, a % b) : Math.abs(b));
 
