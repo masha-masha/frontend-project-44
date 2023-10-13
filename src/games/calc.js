@@ -1,8 +1,9 @@
 import playGame from '../index.js';
-import { getNumber, getIndex } from '../utils.js';
-const rulesOfTheGame = 'What is the result of the expression?'
 
-const operators = ['-','+','*'];
+import { getNumber, getIndex } from '../utils.js';
+const rulesOfTheGame = 'What is the result of the expression?';
+
+const operators = ['-', '+', '*'];
 const calculate = (x, y, operator) => {
     switch (operator) {
       case '+':
@@ -26,4 +27,3 @@ const calculate = (x, y, operator) => {
   
   const brainCalc = () => playGame(rulesOfTheGame, playRound);
   export default brainCalc;
-

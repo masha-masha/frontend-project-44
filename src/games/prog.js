@@ -1,4 +1,5 @@
 import playGame from '../index.js';
+
 import { getNumber, getIndex } from '../utils.js';
 const rulesOfTheGame = 'What number is missing in the progression?';
 const getProgression = (start, length, step) => {

@@ -1,6 +1,7 @@
 import playGame from '../index.js';
+
 import { getNumber } from '../utils.js';
-const rulesOfTheGame = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+const rulesOfTheGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
   if (number < 2) {

@@ -1,4 +1,5 @@
 import playGame from '../index.js';
+
 import { getNumber } from '../utils.js';
 const rulesOfTheGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 const playRound = () => {

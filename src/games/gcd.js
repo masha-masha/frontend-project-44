@@ -1,4 +1,5 @@
 import playGame from '../index.js';
+
 import { getNumber } from '../utils.js';
 const rulesOfTheGame = 'Find the greatest common divisor of given numbers.'
 
