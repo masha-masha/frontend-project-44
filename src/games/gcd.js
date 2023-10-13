@@ -12,5 +12,5 @@ const playRound = () => {
     const correctAnswer = getGcd(number1, number2).toString();
     return [question, correctAnswer];
   };
-  const brainGcd = () => playGame(rulesOfTheGame,playRound);
+  const brainGcd = () => playGame(rulesOfTheGame, playRound);
   export default brainGcd;
