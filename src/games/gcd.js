@@ -4,7 +4,7 @@ import { getNumber } from '../utils.js';
 
 const rulesOfTheGame = 'Find the greatest common divisor of given numbers.';
 
-const getGcd = (a, b) => ((a % b) ? getGcd(b, a % b) : Math.abs(b));
+const getGcd = (a, b) => ((a % b) ? getGcd(b, a % b) : b);
 
 const playRound = () => {
   const number1 = getNumber(0, 50);
