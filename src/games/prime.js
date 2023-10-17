@@ -1,6 +1,6 @@
 import playGame from '../index.js';
 
-import { getNumber } from '../utils.js';
+import { getNumber, getIndex } from '../utils.js';
 
 const rulesOfTheGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -15,10 +15,18 @@ const isPrime = (number) => {
   }
   return true;
 };
+const getRandomPrime = () => {
+  let num = 0;
+  while (!isPrime(num)) {
+    num = getNumber(0, 10000);
+  }
+  return num;
+};
 const playRound = () => {
-  const number = getNumber(0, 1000);
-  const question = number;
-  const correctAnswer = isPrime(number) ? 'yes' : 'no';
+  const variant = [getNumber(0, 1000), getRandomPrime()];
+  const neededNum = variant[getIndex(variant)];
+  const question = neededNum;
+  const correctAnswer = isPrime(neededNum) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 const brainPrime = () => playGame(rulesOfTheGame, playRound);
